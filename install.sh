@@ -29,11 +29,11 @@ chmod -R 755 /root/hashrentalcoincore
 chmod -R 755 /root/.hashrentalcoincore
 sudo apt-get install -y pwgen
 GEN_PASS=$(pwgen -1 -n 20)
-echo -e "rpcuser=hashrentalcoinuser\nrpcpassword=${GEN_PASS}\nrpcport=12547\nport=12548\nlisten=1\nmaxconnections=256" >> /root/.hashrentalcoincore/hashrentalcoin.conf
+echo -e "rpcuser=hashrentalcoinuser\nrpcpassword=${GEN_PASS}\nrpcport=10773\nport=7883\nlisten=1\nmaxconnections=256" >> /root/.hashrentalcoincore/hashrentalcoin.conf
 cd /root/hashrentalcoincore
 ./hashrentalcoind -daemon
 sleep 10
-masternodekey=$(./hashrentalcoin-cli masternode genkey)
+masternodekey=
 ./hashrentalcoin-cli stop
 echo -e "masternode=1\nmasternodeprivkey=$masternodekey" >> /root/.hashrentalcoincore/hashrentalcoin.conf
 ./hashrentalcoind -daemon
@@ -48,5 +48,8 @@ sudo crontab -l >> tempcron
 sudo echo "* * * * * cd /root/.hashrentalcoincore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log" >> tempcron
 sudo crontab tempcron
 rm tempcron
+echo "Masternode private key: $masternodekey"
+echo "Job completed successfully" 
+
 echo "Masternode private key: $masternodekey"
 echo "Job completed successfully" 
