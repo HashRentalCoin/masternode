@@ -55,7 +55,7 @@ mn1 45.76.250.89:12548 92TPhvQjKd5vMiBcwbRpq3g4CnPVGUAZGrorZJPNJoohgCu9QkF a9b31
 your masternode with the status “MISSING”.
 9. It is useful to lock the account holding the MN coins so that it would not be accidentally spent. To do this, if you
 have not done this yet go to the menu Settings→Options, choose tab Wallet, check the box “Enable coin control features”,
-then restart the wallet. Go to the Send tab, click “Inputs”, select “List mode”, select the line with your MN and 1000
+then restart the wallet. Go to the Send tab, click “Inputs”, select “List mode”, select the line with your MN and 2000
 coins in it, right click on it and select “Lock unspent”. The line should be grayed out now with a lock icon on it. To
 unlock chose “Unlock unspent”.
 
@@ -245,7 +245,7 @@ Let’s observe the node synchronization process. Execute:
 The output should look similar to:
 ```
 {
-  "version": 10001,
+  "version": 1,
   "protocolversion": 70208,
   "walletversion": 10000,
   "balance": 0.00000000,
@@ -490,7 +490,7 @@ mn1 45.76.250.89:12548 92TPhvQjKd5vMiBcwbRpq3g4CnPVGUAZGrorZJPNJoohgCu9QkF a9b31
 your masternode with the status “MISSING”.
 9. It is useful to lock the account holding the MN coins so that it would not be accidentally spent. To do this, if you
 have not done this yet go to the menu Settings→Options, choose tab Wallet, check the box “Enable coin control features”,
-then restart the wallet. Go to the Send tab, click “Inputs”, select “List mode”, select the line with your MN and 1000
+then restart the wallet. Go to the Send tab, click “Inputs”, select “List mode”, select the line with your MN and 2000
 coins in it, right click on it and select “Lock unspent”. The line should be grayed out now with a lock icon on it. To
 unlock chose “Unlock unspent”.
 
