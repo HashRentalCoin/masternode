@@ -31,7 +31,7 @@ Creating MN keys for a VPS instance in your local qt wallet
 will need to restart the wallet for these to show up.
 2. Create a new receiving address. Open menu File→ Receiving addressess…
 Click “+” button and enter a name for the address, for example mn1.
-3. Send exactly 1000 coins to this mn1 address. Wait for 15 confirmations of this transaction.
+3. Send exactly 2000 coins to this mn1 address. Wait for 15 confirmations of this transaction.
 4. Open a debug window via menu Tools→Debug window.
 5. Execute “masternode genkey” command. This will output your MN priv key, for example:
 92TPhvQjKd5vMiBcwbRpq3g4CnPVGUAZGrorZJPNJoohgCu9QkF. Save it.
