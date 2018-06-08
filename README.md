@@ -14,8 +14,11 @@ Automated masternode installation
 ---------------------------------
 If you have a VPS already setup you can use this script to install the binaries and pre-configure the config files.
 Installs under the root.
+
+sudo apt-get install git 
 ```
-wget https://github.com/HashRentalCoin/masternode/blob/master/install.sh
+git clone https://github.com/HashRentalCoin/masternode.git
+cd masternode
 chmod +x install.sh
 ./install.sh
 ```
