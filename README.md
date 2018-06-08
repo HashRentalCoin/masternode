@@ -7,7 +7,7 @@ a MN instance.
 
 What you will need
 ------------------
-- a qt wallet with at least 1000 coins
+- a qt wallet with at least 2000 coins
 - a VPS instance running Linux, this setup is using Ubuntu 16.04 64-bit.
 
 Automated masternode installation
