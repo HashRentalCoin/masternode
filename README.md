@@ -15,22 +15,21 @@
 * ./install.sh
 * cd
 * cd .hashrentalcoincore
+**************
+* sudo nano hashrentalcoin.conf
+* replace with your genkey masternodeprivkey = 
+* Ctrl+o 
+* Ctrl+x
+**************
+
+* hashrentalcoind -daemon -reindex
+* tests
+* hashrentalcoin-cli getinfo
+* hashrentalcoin-cli mnsync status
+
+* wait 5 minutes (the client is synchronized)
+* correct answer
 * 
-
-*sudo nano hashrentalcoin.conf
-*replace with your genkey masternodeprivkey = 
-*Ctrl+o 
-*Ctrl+x
-
-
-*hashrentalcoind -daemon -reindex
-*tests
-*hashrentalcoin-cli getinfo
-*hashrentalcoin-cli mnsync status
-
-*wait 5 minutes (the client is synchronized)
-*correct answer
-*
 {
   "AssetID": 999,
   "AssetName": "MASTERNODE_SYNC_FINISHED",
