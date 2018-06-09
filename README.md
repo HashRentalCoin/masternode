@@ -1,16 +1,27 @@
 # MN-setup
 
 git clone https://github.com/HashRentalCoin/HARC-client.git
+```
 cd HARC-client
+```
 strip hashrentalcoind
+```
 cp hashrentalcoind /usr/local/bin
+```
 strip hashrentalcoin-cli
+```
 cp hashrentalcoin-cli /usr/local/bin
+```
 cd /usr/local/bin
+```
 chmod -R 755 hashrentalcoind
+```
 chmod -R 755 hashrentalcoin-cli
+
 cd
+```
 cd HARC-client
+```
 chmod -R 755 install.sh
 ./install.sh
 cd
