@@ -47,4 +47,4 @@ Ctrl+x
 in the desktop wallet, run the masternode
 ******
 
-*hashrentalcoin-cli masternode start
+hashrentalcoin-cli masternode start
