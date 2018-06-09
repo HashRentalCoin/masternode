@@ -17,12 +17,12 @@
 * cd .hashrentalcoincore
 * 
 *************
-*sudo nano hashrentalcoin.conf
-*replace with your genkey masternodeprivkey = 
-*Ctrl+o 
-*Ctrl+x
+sudo nano hashrentalcoin.conf
+replace with your genkey masternodeprivkey = 
+Ctrl+o 
+Ctrl+x
 *************
-*
+
 *hashrentalcoind -daemon -reindex
 *tests
 *hashrentalcoin-cli getinfo
@@ -44,7 +44,7 @@
 }
 
 ******
-*in the desktop wallet, run the masternode
+in the desktop wallet, run the masternode
 ******
 
 *hashrentalcoin-cli masternode start
