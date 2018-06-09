@@ -16,12 +16,12 @@
 * cd
 * cd .hashrentalcoincore
 * 
-*************
-sudo nano hashrentalcoin.conf
-replace with your genkey masternodeprivkey = 
-Ctrl+o 
-Ctrl+x
-*************
+
+*sudo nano hashrentalcoin.conf
+*replace with your genkey masternodeprivkey = 
+*Ctrl+o 
+*Ctrl+x
+
 
 *hashrentalcoind -daemon -reindex
 *tests
